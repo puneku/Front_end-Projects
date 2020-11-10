@@ -1,0 +1,95 @@
+/*Organizations*/
+/*Based on page preference*/
+/*Based on css specificity */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #1a2a6c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  
+	background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); 
+}
+
+h1 {
+	background: teal;
+	margin: 0 0;
+	padding: 10px 10px 10px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	height: 40px;
+	line-height: 40px;
+}
+
+li:nth-of-type(2n) {
+	background: #e3e0da;
+}
+
+li span {
+	background: red;
+	height: 40px;
+	text-align: center;
+	margin-right: 20px;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+h1 span {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+
+
+input[type='text'] {
+	height: 40px;
+	padding: 0 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+	background: white;
+	outline: none;
+	border: 3px solid teal;
+}
+
+.fa-angle-down {
+	float: right;
+}
+
+.completed {
+	/*background: purple;*/
+	text-decoration: line-through;
+}
+
+#container {
+	box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .4);
+	width: 30%;
+	margin: 0 auto ;
+	background: white;
+}
+
+#tasks {
+	margin: 0 0 ;
+	padding: 0;
+}
+
+
